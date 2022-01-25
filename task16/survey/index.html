@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  body{
+  width:100%;
+  border: 5px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+sup{
+  color: red;
+}
+  ol {padding-top:2em}
+  li em, li label, li input {display:inline-block; padding:0 8px 8px 8px; vertical-align: top}
+  li {position: relative; }
+  li em{ width:10.5em}
+  li label{position: absolute;width:4em; bottom: 100% ; margin-left: -1em; font-weight: bold}
+  li input, li label { width:10em ; text-align: center}
+  li+ li label {left:-9999em ;}
+
+.container{
+    display:flex;
+    flex-flow: row wrap;
+    border: 5px solid lightgray;
+    padding: 30px;
+}
+
+#first,#last,#email{
+ margin-right:40px;
+}
+
+label{
+  font-size:20px;
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="row"><label for="first">Name<sup>*</sup></label><br></div>
+      <div class="row">
+        <div class="col-50">
+          <input type="text" class="form-group" id="first"><br>Firstname
+        </div>
+        <div class="col-25">
+         <input type="text" class="form-group" id="last"><br>Lastname
+        </div>
+      </div>
+       <div class="row"><label for="email">Email<sup>*</sup></label></div>
+      <div class="row">
+        <div class="col-25">
+        </div>
+        <div class="col-75">
+          <input type="email" class="form-group" id="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Your Experience<sup>*</sup></label>
+        </div>
+      </div>
+        <div class="col">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <h5>How satisfied are you with<sup>*</sup></h5><br>
+        <br> 
+         <div class="row">
+          <ul type="none">
+            <li>
+             <em>Purchase</em>
+             <label for="most1">Very Unsatisfied</label><input type="radio" id="most1" name="q1">
+             <label for="almost1">Unsatisfied</label><input type="radio" id="almost1"name="q1">
+             <label for="some1">Neutral</label><input type="radio" id="some1" name="q1">
+             <label for="barely1">Satisfied</label><input type="radio" id="barely1" name="q1">
+             <label for="none1">Very Satisfied</label><input type="radio" id="none1" name="q1">
+          </li>
+          <li>
+             <em>Service</em>
+             <label for="most2">Very Unsatisfied</label><input type="radio" id="most2" name="q2">
+             <label for="almost2">Unsatisfied</label><input type="radio" id="almost2"name="q2">
+             <label for="some2">Neutral</label><input type="radio" id="some2" name="q2">
+             <label for="barely2">Satisfied</label><input type="radio" id="barely2" name="q2">
+             <label for="none2">Very Satisfied</label><input type="radio" id="none2" name="q2">
+          </li>
+          <li>
+             <em>Company Overall</em>
+             <label for="most3">Very Unsatisfied</label><input type="radio" id="most3" name="q3">
+             <label for="almost3">Unsatisfied</label><input type="radio" id="almost3"name="q3">
+             <label for="some3">Neutral</label><input type="radio" id="some3" name="q3">
+             <label for="barely3">Satisfied</label><input type="radio" id="barely3" name="q3">
+             <label for="none3">Very Satisfied</label><input type="radio" id="none3" name="q3">
+          </li>
+          </ul>
+         </div>
+         <h5>How likely are you to<sup>*</sup></h5><br>
+        <br> 
+         <div class="row">
+          <ul type="none">
+            <li>
+             <em>Buy from us again</em>
+             <label for="most1">Very Unsatisfied</label><input type="radio" id="most1" name="q1">
+             <label for="almost1">Unsatisfied</label><input type="radio" id="almost1"name="q1">
+             <label for="some1">Neutral</label><input type="radio" id="some1" name="q1">
+             <label for="barely1">Satisfied</label><input type="radio" id="barely1" name="q1">
+             <label for="none1">Very Satisfied</label><input type="radio" id="none1" name="q1">
+          </li>
+          <li>
+             <em>Recommend our products to others</em>
+             <label for="most2">Very Unsatisfied</label><input type="radio" id="most2" name="q2">
+             <label for="almost2">Unsatisfied</label><input type="radio" id="almost2"name="q2">
+             <label for="some2">Neutral</label><input type="radio" id="some2" name="q2">
+             <label for="barely2">Satisfied</label><input type="radio" id="barely2" name="q2">
+             <label for="none2">Very Satisfied</label><input type="radio" id="none2" name="q2">
+          </li>
+          <li>
+             <em>Recommmend our Company to others</em>
+             <label for="most3">Very Unsatisfied</label><input type="radio" id="most3" name="q3">
+             <label for="almost3">Unsatisfied</label><input type="radio" id="almost3"name="q3">
+             <label for="some3">Neutral</label><input type="radio" id="some3" name="q3">
+             <label for="barely3">Satisfied</label><input type="radio" id="barely3" name="q3">
+             <label for="none3">Very Satisfied</label><input type="radio" id="none3" name="q3">
+          </li>
+          </ul>
+         </div>
+         <div>
+           <h5>Additional comments or suggestions</h5>
+           <textarea name="" id="" cols="100" rows="5"></textarea><br>
+           <button class="btn" id="btn">Submit</button>
+         </div>
+    </form>
+  </div>
+</body>
+</html>
